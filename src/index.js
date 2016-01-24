@@ -14,7 +14,7 @@ var getOffset = function(element) {
 
   return result;
 };
-export default {
+Vue.directive('datepicker', {
   twoWay: true,
   params: ['format'],
   bind() {
@@ -46,4 +46,4 @@ export default {
       that.picker.hide();
     });
   }
-};
+});
